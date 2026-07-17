@@ -1,0 +1,22 @@
+services:
+  ppe-detection:
+    build: .
+    container_name: ppe-detection-system
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    volumes:
+      - ./weights:/app/weights
+      - ./data:/app/data
+      - ./outputs:/app/outputs
+      - ./logs:/app/logs
+    restart: unless-stopped
+    # Für GPU-Unterstützung (benötigt nvidia-container-toolkit):
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]

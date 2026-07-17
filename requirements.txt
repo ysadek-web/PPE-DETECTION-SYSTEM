@@ -1,0 +1,9 @@
+# Core
+streamlit>=1.38
+opencv-python-headless>=4.10
+numpy>=1.26
+ultralytics>=8.3
+python-dotenv>=1.0
+
+# Testing
+pytest>=8.0

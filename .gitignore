@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Umgebungsvariablen (niemals committen!)
+.env
+
+# YOLO-Gewichte (groß, ggf. proprietär)
+weights/*.pt
+
+# Lokale Test-Daten
+data/input/*
+data/examples/*
+!data/input/.gitkeep
+!data/examples/.gitkeep
+
+# Generierte Outputs
+outputs/images/*
+outputs/videos/*
+outputs/alerts/*
+!outputs/images/.gitkeep
+!outputs/videos/.gitkeep
+!outputs/alerts/.gitkeep
+
+# Logs
+logs/*.log
+!logs/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

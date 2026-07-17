@@ -1,0 +1,1 @@
+"""PPE-Erkennungssystem – Quellcode-Paket."""
